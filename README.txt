@@ -4,6 +4,31 @@ ____________________________________________________
 
 Enjoy...................Follow Me..................
 
+Step to Install.:
+1. Install JDK 1.7 x64
+
+2. extract the files in /usr/local/hadoop-2.5.1
+
+3.download the config file in
+
+4. $sudo gedit ~/.bashrc   // addd the follwing lines
+
+#HADOOP VARIABLES START
+export JAVA_HOME=/usr/java/jdk1.7.0_67 
+export HADOOP_INSTALL=/usr/local/hadoop-2.5.1 
+export PATH=$PATH:$HADOOP_INSTALL/bin
+export PATH=$PATH:$HADOOP_INSTALL/sbin
+export HADOOP_MAPRED_HOME=$HADOOP_INSTALL
+export HADOOP_COMMON_HOME=$HADOOP_INSTALL
+export HADOOP_HDFS_HOME=$HADOOP_INSTALL
+export YARN_HOME=$HADOOP_INSTALL
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_INSTALL/lib/native
+export HADOOP_OPTS="-Djava.library.path=$HADOOP_INSTALL/lib"
+#HADOOP VARIABLES END
+5. source ~/.bashrc
+
+6. hadoop namenode -format
+7. enjoy
 
 How I Built ?
 
