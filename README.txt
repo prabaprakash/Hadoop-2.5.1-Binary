@@ -1,31 +1,34 @@
-For the latest information about Hadoop, please visit our website at:
+____________________________________________________
+Apache Hadoop 2.5.1 Native  Built for Ubuntu 14.10
+____________________________________________________
 
-   http://hadoop.apache.org/core/
+Enjoy....................................................
 
-and our wiki, at:
 
-   http://wiki.apache.org/hadoop/
+How I Built ?
 
-This distribution includes cryptographic software.  The country in 
-which you currently reside may have restrictions on the import, 
-possession, use, and/or re-export to another country, of 
-encryption software.  BEFORE using any encryption software, please 
-check your country's laws, regulations and policies concerning the
-import, possession, or use, and re-export of encryption software, to 
-see if this is permitted.  See <http://www.wassenaar.org/> for more
-information.
+follow the steps if you like to built.....
 
-The U.S. Government Department of Commerce, Bureau of Industry and
-Security (BIS), has classified this software as Export Commodity 
-Control Number (ECCN) 5D002.C.1, which includes information security
-software using or performing cryptographic functions with asymmetric
-algorithms.  The form and manner of this Apache Software Foundation
-distribution makes it eligible for export under the License Exception
-ENC Technology Software Unrestricted (TSU) exception (see the BIS 
-Export Administration Regulations, Section 740.13) for both object 
-code and source code.
+Need Hadoop 2.5.1 Source Files
+then
+1.Maven 3.3
 
-The following provides more details on the included cryptographic
-software:
-  Hadoop Core uses the SSL libraries from the Jetty project written 
-by mortbay.org.
+2.Protocal Buffer 2.5
+
+3.Cmake  - for Native
+
+4.sudo apt-get install zlib1g-dev
+
+5.sudo apt-get install libssl-dev
+
+6.JDK 1.7 64 BIN
+
+
+final command
+
+mvn package -Pdist,native -DskipTests -Dtar
+
+for native with Documentation
+
+
+mvn package -Pdist,native,docs -DskipTests -Dtar
