@@ -1,5 +1,5 @@
 ____________________________________________________
-Apache Hadoop 2.5.1 Native  Built for Ubuntu 14.10
+Apache Hadoop 2.5.1 Native  Built Version for Ubuntu 14.10
 ____________________________________________________
 
 Enjoy...................Follow Me..................
