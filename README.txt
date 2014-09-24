@@ -9,7 +9,7 @@ Step to Install.:
 
 2. extract the files in /usr/local/hadoop-2.5.1
 
-3.download the config file in
+3.download the config file in https://github.com/prabaprakash/Hadoop-2.5.1-Config-Files
 
 4. $sudo gedit ~/.bashrc   // addd the follwing lines
 
